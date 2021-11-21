@@ -1,0 +1,43 @@
+<html>
+    <title>Example Page</title>
+<style>
+h1 {
+    color: blue;
+}
+
+#content {
+    border: dashed red;
+    border-radius: 20px;
+    margin: 50px;
+    padding: 50px;
+}
+
+a {
+    color: green;
+    text-decoration: underline;
+}
+</style>
+    <body>
+        <h1>This is my example page</h1>
+        <p>paragraph 1</p>
+        <p>paragraph 2</p>
+        <p>paragraph 3</p>
+        <div id="content">
+            Nothing here yet
+        </div>
+        <ul id="links_list">
+            <li><a id="link1" onClick="goHomeClicked()">go home</a></li>
+        </ul>
+    </body>
+<script>
+function goHomeClicked() {
+    content.innerHTML = "<ul><li>post title 1</li><a onClick=\"post2Clicked()\"><li>post title 2</li></a><li>post title 3</li></ul>"
+}
+
+function post2Clicked() {
+    content.innerHTML = "<h2>post title 2</h2><p>some stuff</p>"
+}
+
+var content = document.getElementById("content")
+</script>
+</html>
