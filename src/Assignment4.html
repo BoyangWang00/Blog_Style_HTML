@@ -184,7 +184,9 @@ var second_post =  "<h1>Best Baked Potato </h1><time class = \"time-format\">Nov
 var third_post = "<h1>Perfect Baked Apples </h1><time class = \"time-format\">October 19, 2021</time><img src=\"best-baked-apples-recipe-2-768x1157.jpg\" alt=\"best-baked-apples-recipe\" style=\"float:right;width:200px;height:300px;padding: 10px;\">    <p>Craving something sweet? These baked apples are a delightful dessert featuring seasonal fruit. They taste like an apple crisp but look much cuter.</p><p>This baked apple recipe is all in the technique, but it’s not complicated. I’ll walk you through it below.</p> <p>You’ll need a short list of ingredients to make this recipe—apples, oats, coconut or brown sugar, optional pecans or walnuts, and butter. We’ll add a little bit of cinnamon and salt to take the flavor over the top.</p> <p>Serve these wholesome baked apples with a scoop of vanilla ice cream or creamy yogurt. They’re sweet enough to taste like a treat, but wholesome at the same time. Serve your baked apples as a special dessert, or make them as a fun weekend project!</p> <h3>How to Make Baked Apples</h3> <p>This recipe is actually a fully reworked version of one of my oldest desserts: Individual Pear and Apple Crisps. You’ll find the full recipe below, but are some key elements that make this recipe work:</p> <p>Choose your apples wisely.Honeycrisp and Gala apples worked best in my recipe tests (I also tried Granny Smith and Fuji). If I had to choose, I’d pick Honeycrisp, as shown in these photos. They are substantial in size, full of flavor and vibrant even after baking.</p> <p>Prepare the apples carefully.This baked apple recipe yields beautiful and delicious results, in large part because of how we slice the apples (a trick I found in my trusty America’s Test Kitchen cookbook).</p> <p>Slicing off the tops of the apples gives us easier access to the insides for scooping and provides greater surface area for steam to escape from the apple flesh, reducing the likelihood that the skin will split open. The tops create a micro-environment that helps the apple bake evenly throughout and prevents the filling from becoming too golden. All that, and the apple tops are cute!</p> <p>Add water.Once you’ve nestled the prepared apples into a square baking dish, pour some water into the dish. The water will help steam and soften the apples while they bake, preventing them from drying out.</p>"
 
 
-function reqListener () {
+function reqListener (e) {
+  console.log(this)
+  console.log(e)
   const obj = JSON.parse(this.responseText);
   USD.innerHTML = obj.USD.last + " at " + (new Date().toLocaleTimeString())
   CAD.innerHTML = obj.CAD.last + " at " + (new Date().toLocaleTimeString())
@@ -198,7 +200,7 @@ oReq.open("GET", "https://blockchain.info/ticker");
 oReq.send();
 }
 
-var intervalID = setInterval(bitcoin_price_request, 5000);
+var intervalID = setInterval(bitcoin_price_request, 1000);
 
 </script>
 

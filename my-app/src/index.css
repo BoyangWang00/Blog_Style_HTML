@@ -1,13 +1,70 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+header {
+  background-color: #1D3557;
+  padding: 30px;
+  text-align: right;
+  font-size: 35px;
+  color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.ColContainer {
+  display: table;
+  width: 100%;
+  background: #A8DADC;
+}
+
+/* Create two columns/boxes that floats next to each other */
+main {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #F1FAEE;
+/*  height: 6200px;*/
+}
+
+.post-container {
+  display: table;
+  width: 100%;
+  background: #F1FAEE;
+  padding: 5px;
+  flex:1;
+  flexDirection:'row'
+}
+
+.time-format {
+    font-size: 13px;
+    font-family: Function,'Trebuchet MS',Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+nav {
+  float: left;
+  width: 30%;
+/*  height: 6200px; */
+  background: #A8DADC;
+  padding: 20px;
+}
+
+.price {
+  display: inline;
+}
+
+/* Style the footer */
+footer {
+  background-color: #457B9D;
+  padding: 10px;
+  text-align: center;
+  color: white;
 }
