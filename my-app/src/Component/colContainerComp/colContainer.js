@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Con from './mainComp/Con';
-import Nav from './navComp/nav';
 
 
 class ColContainer extends Component {

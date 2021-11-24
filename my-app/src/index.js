@@ -6,12 +6,6 @@ import Footer from './Component/footerComp/footer';
 import ColContainer from './Component/colContainerComp/colContainer';
 
 
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom';
-
 class Content extends Component {
   render() {
     return (

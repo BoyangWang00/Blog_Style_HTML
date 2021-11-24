@@ -154,7 +154,7 @@ var third_post = <div className="post-container" id="third_post_a">
       <h3> Bitcoin Price </h3>
 
        <ul>
-        <li>Price in USD is <div className = "price" id="USD">{this.state.bitcoinprice}</div></li>
+        <li>Price in USD is <div className = "price" id="USD">{this.state.bitcoinprice} </div></li>
       </ul> 
      </nav>
 
