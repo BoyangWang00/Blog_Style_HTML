@@ -7,12 +7,19 @@ clone the repo by run following command
 git clone https://github.com/BoyangWang00/CS612_Assignment4.git
 ```
 ## Step 2:
-open src folder in the downloaded repo
+open myapp folder in the downloaded repo 
+
+```
+cd CS612_Assignment4/my-app/
+```
 
 ## Step 3:
-Double click Assignment4.html open the file in browser
+run npm start
+```
+npm start
+```
 
 ## Step 4:
 exploring different blog by clicking blog title
 
-Please see the video for more details [CS612_Assignment4](https://drive.google.com/file/d/1bLS6-uCbsPvo_IohKf4hplD8J_vF6qkI/view?usp=sharing)
+Please see the video for more details [CS612_Assignment4]()
