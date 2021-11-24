@@ -22,4 +22,4 @@ npm start
 ## Step 4:
 exploring different blog by clicking blog title
 
-Please see the video for more details [CS612_Assignment4]()
+Please see the video for more details [CS612_Assignment4](https://drive.google.com/file/d/1BRHnq5aNjkf3J3f-CegZCkdLJJdZ-iY2/view?usp=sharing)
